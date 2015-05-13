@@ -1,0 +1,36 @@
+{
+    "students": [
+    {
+            "name": "Dan",
+            "inAttendance": true
+        },
+        {
+            "name": "Doug",
+            "inAttendance": false
+        }, {
+            "name": "Jerry",
+            "inAttendance": true
+        }, {
+            "name": "Justin",
+            "inAttendance": false
+        }, {
+            "name": "Mike",
+            "inAttendance": true
+        }, {
+            "name": "Phuong",
+            "inAttendance": false
+        }, {
+            "name": "Ricky",
+            "inAttendance": true
+        }, {
+            "name": "Rashard",
+            "inAttendance": false
+        }, {
+            "name": "Steve",
+            "inAttendance": true
+        }, {
+            "name": "Vanessa",
+            "inAttendance": false
+        }
+    ]
+}

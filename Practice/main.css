@@ -1,0 +1,25 @@
+
+
+/* NOTES
+
+<script>
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function () {
+		if (xhr.readyState === 4) {
+			if (xhr.status === 200) {
+				// 200 means okay it was successful
+			document.getElementById('ajax').innerHTML = xhr.responseText;
+		} else if (xhr.status === 404) {
+				// 404 means file not found
+			alert("The file is not found, please contact customer service.");
+		} else if (xhr.status === 500) {
+				// 500 means server had a problem
+			alert("There is a server problem, please try again later.");
+		}
+	  }
+	};
+	xhr.open('GET', 'sidebar.html');
+	xhr.send();
+</script>
+*/
+

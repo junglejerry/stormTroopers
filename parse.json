@@ -1,0 +1,26 @@
+{
+    "characters": [
+    {
+            "name": "Luke Skywalker",
+        },
+        {
+            "name": "Han Solo",
+        }, {
+            "name": "Princess Leah",
+        }, {
+            "name": "Obi Wan Kenobe",
+        }, {
+            "name": "Darth Vader",
+        }, {
+            "name": "Yoda",
+        }, {
+            "name": "Chewbacca",
+        }, {
+            "name": "r2d2",
+        }, {
+            "name": "c3po",
+        }, {
+            "name": "Lando Calrisian",
+        }
+    ]
+}
