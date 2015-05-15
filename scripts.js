@@ -5,14 +5,53 @@ $(document).ready(function() {
     new WOW().init();
 
 
-    // //Simple Text Rotator
-    // $(".rotate").textrotator({
-    //     animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-    //     separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-    //     speed: 9000 // How many milliseconds until the next word show.
-    // });
+    //Simple Text Rotator
+    $(".rotate").textrotator({
+        animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+        separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+        speed: 9000 // How many milliseconds until the next word show.
+    });
+
+// Start Button
+    $("#button1").click(function() {
+        document.getElementById("button1").innerHTML = ("Use the force, Luke!");
+        score=0;
+        newBoard;
+        numMatches=0;
+        numMismatches
+    });
+
+
+// Clock Timer
+function animateValue(id, start, end, duration) {
+   var range = end - start;
+   var current = start;
+   var increment = end > start? 1 : -1;
+   var stepTime = Math.abs(Math.floor(duration / range));
+   var obj = document.getElementById(id);
+   var timer = setInterval(function() {
+       current += increment;
+       obj.innerHTML = current;
+       if (current == end) {
+           clearInterval(timer);
+       }
+   }, stepTime);
+}
+
+animateValue("value", 0, 120,100000);
+var counter = 0;//set this to what ever you want the start # to be
+   countUP ();//call the function once 
+   function countUP () {
+       counter++;//increment the counter by 1
+       setTimeout ( "countUP()", 1000 );//runs its self after 1000 miliseconds}\
+    }
+
+// Scoreboard
+
+
 
 });
+
 
 // Initiate Variables
 var numMatches = 2;
@@ -20,7 +59,7 @@ var numMismatches = 0;
 var score = 0;
 var count = 0;
 var people = [];
-//var characterArray = [];  <- This array replaces the fullDeck array if you want to hard code the card names.
+//var characterArray = [];  <- This array was replaced by the fullDeck array to move from hard coding the card names to pulling from swAPI.
 //["Luke Skywalker", "Luke Skywalker", "C-3PO", "C-3PO", "R2-D2", "R2-D2", "Darth Vader", "Darth Vader", "Leia Organa", "Leia Organa", "Owen Lars", "Owen Lars", "Beru Whitesun lars", "Beru Whitesun lars", "R5-D4", "R5-D4", "Biggs Darklighter", "Biggs Darklighter", "Obi-Wan Kenobi", "Obi-Wan Kenobi", "Anakin Skywalker", "Anakin Skywalker", "Wilhuff Tarkin", "Wilhuff Tarkin", "Chewbacca", "Chewbacca", "Han Solo", "Han Solo", "Greedo", "Greedo"];
 var memoryValues = [];
 var memoryCards = [];
@@ -57,10 +96,10 @@ function buildDeck(people) {
     for (i = 0; i < 15; i++) {
         // double the list of same names
         for (x = 0; x < numMatches; x++) {
-                fullDeck.push(people[i].name);
-            }
+            fullDeck.push(people[i].name);
+        }
     }
-        console.log(fullDeck);
+    console.log(fullDeck);
 
     newBoard(people);
 }

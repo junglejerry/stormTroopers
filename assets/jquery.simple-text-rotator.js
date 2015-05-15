@@ -14,15 +14,15 @@
 !function($){
   
   var defaults = {
-		animation: "dissolve",
-		separator: ",",
-		speed: 2000
-	};
-	
-	$.fx.step.textShadowBlur = function(fx) {
+    animation: "dissolve",
+    separator: ",",
+    speed: 2000
+  };
+  
+  $.fx.step.textShadowBlur = function(fx) {
     $(fx.elem).prop('textShadowBlur', fx.now).css({textShadow: '0 0 ' + Math.floor(fx.now) + 'px black'});
   };
-	
+  
   $.fn.textrotator = function(options){
     var settings = $.extend({}, defaults, options);
     
@@ -164,5 +164,4 @@
   }
   
 }(window.jQuery);
-
 

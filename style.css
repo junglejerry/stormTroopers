@@ -38,7 +38,7 @@ div#memoryBoard > div {
 	cursor:pointer;
 	font-family: 'Special Elite', cursive;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 18px;
 	color: #f9c83b;
 	text-align: center;
 }
@@ -51,7 +51,7 @@ div#memoryBoard > div {
 
 .rotate {
     font-family: 'Special Elite', cursive;
-    font-size: 14px;
+    font-size: 18px;
     color: #f9c83b;
 	text-align: center;
 	padding: none;
@@ -74,12 +74,31 @@ div#memoryBoard > div {
 	margin-bottom: 3px;
 }
 
-.timer {
+#score {
 	color: #f9c83b;
 	text-align: center;
 	font-family: 'Special Elite', cursive;
 	font-size: 18px;
 	margin-top: 40px;
+	margin-bottom: 3px;
+}
+
+.clock {
+	color: #f9c83b;
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	margin-top: 40px;
+	margin-bottom: 3px;
+}
+
+/* value pertains to the clock counter function */
+#value {
+	color: #f9c83b;
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	margin-top: 20px;
 	margin-bottom: 3px;
 }
 
@@ -91,6 +110,26 @@ div#memoryBoard > div {
 	margin-top: 50px;
 }
 
+#button1 {
+    padding: none;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+
+.icon {
+	padding: none;
+    border-radius: 50%;
+}
+
+.buttonText1 {
+	margin-top: 8px;
+	margin-bottom: -5px;
+	color: #f9c83b;
+	text-align: center;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+}
+
 footer {
 	font-family: 'Special Elite', cursive;
 	color: #f9c83b;
@@ -100,6 +139,36 @@ footer {
 	margin-bottom: 20px;
 }
 
+/*CSS code for 3D Animation Card Flip
+.flip3D{ width:240px; height:200px; margin:10px; float:left; }
+.flip3D > .front{
+    position:absolute;
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
+    transform: perspective( 600px ) rotateY( 0deg );
+    background:#FC0; width:240px; height:200px; border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+    position:absolute;
+    -webkit-transform: perspective( 600px ) rotateY( 180deg );
+    transform: perspective( 600px ) rotateY( 180deg );
+    background: #80BFFF ; width:240px; height:200px; border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+.flip3D:click > .front{
+    -webkit-transform: perspective( 600px ) rotateY( -180deg );
+    transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:click > .back{
+    -webkit-transform: perspective( 600px ) rotateY( 0deg );
+    transform: perspective( 600px ) rotateY( 0deg );
+*/
 
 @media screen and (max-width: 599px) {}
 
