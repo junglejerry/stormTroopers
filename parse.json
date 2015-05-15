@@ -1,26 +1,26 @@
 {
     "characters": [
     {
-            "name": "Luke Skywalker",
+            "name": "Luke_Skywalker",
         },
         {
-            "name": "Han Solo",
+            "name": "Han_Solo",
         }, {
-            "name": "Princess Leah",
+            "name": "Princess_Leia",
         }, {
-            "name": "Obi Wan Kenobe",
+            "name": "Obi-Wan_Kenobi",
         }, {
-            "name": "Darth Vader",
+            "name": "Darth_Vader",
         }, {
             "name": "Yoda",
         }, {
             "name": "Chewbacca",
         }, {
-            "name": "r2d2",
+            "name": "R2-D2",
         }, {
-            "name": "c3po",
+            "name": "C-3PO",
         }, {
-            "name": "Lando Calrisian",
+            "name": "Lando_Calrissian",
         }
     ]
 }

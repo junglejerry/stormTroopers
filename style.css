@@ -4,7 +4,6 @@
         	font-family: 'Press Start 2P', cursive;
          */
 
-
 .wrapper {
     background-image: url(images/space.jpg);
     background-repeat: 100%;
@@ -15,25 +14,55 @@
 #logo {
 	height: 175px;
 	width: 225px;
-	padding: 5px;
 	margin: 3px;
+}
+
+#memoryBoard{
+	width: auto;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 85px;
+	padding-right: 90px;
+	margin: 0px auto;
+}
+
+div#memoryBoard > div {
+	background: url("images/stormTrooper130-165.png");
+	border-style: solid gray;
+	width: 135px;
+	height: 170px;
+	float: left;
+	margin: 15px;
+	padding: 5px;
+	cursor:pointer;
+	font-family: 'Special Elite', cursive;
+	font-weight: bold;
+	font-size: 16px;
+	color: #f9c83b;
+	text-align: center;
+}
+
+#logo {
+	height: 175px;
+	width: 225px;
+	margin-top: 25px;
 }
 
 .rotate {
     font-family: 'Special Elite', cursive;
-    font-size: 16px;
+    font-size: 14px;
     color: #f9c83b;
-    margin-top: 30px;
-	margin-bottom: 10px;
 	text-align: center;
-	padding: 5px;
-	margin: 3px;
+	padding: none;
+	margin-top: -15px;
 }
 
 #falcon {
 	width: 237px;
 	height: 146px;
 	border-radius: 20%;
+	margin-top: -30px;
 }
 
 .scoreboard {
@@ -41,8 +70,8 @@
 	text-align: center;
 	font-family: 'Special Elite', cursive;
 	font-size: 18px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 3px;
 }
 
 .timer {
@@ -50,8 +79,8 @@
 	text-align: center;
 	font-family: 'Special Elite', cursive;
 	font-size: 18px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 3px;
 }
 
 .team {
@@ -61,17 +90,6 @@
 	font-family: 'Press Start 2P', cursive;
 	margin-top: 50px;
 }
-
-.icon {
-	height: 185px;
-	width: 155px;
-	padding: 5px;
-	margin: 3px;
-	border-style: solid gray;
-	display: inline-block;
-}
-
-
 
 footer {
 	font-family: 'Special Elite', cursive;
@@ -86,6 +104,4 @@ footer {
 @media screen and (max-width: 599px) {}
 
 @media screen and (min-width: 980px) {}
-
-
 
