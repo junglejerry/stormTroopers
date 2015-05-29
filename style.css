@@ -41,12 +41,25 @@ div#memoryBoard > div {
 	font-size: 18px;
 	color: #f9c83b;
 	text-align: center;
+	border-radius: 5%;
+/*	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+    transform: perspective( 600px ) rotateY( 180deg );
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+    transform: translateZ(-100px);*/
 }
 
+/*div#memoryBoard > div:hover {
+	animation: zipper 5s;
+    -webkit-animation: zipper 5s;
+    transform: translateZ(-100px);
+}*/
+
+
 #logo {
-	height: 175px;
-	width: 225px;
-	margin-top: 25px;
+	height: 200px;
+	width: 250px;
+	margin-top: 5px;
 }
 
 .rotate {

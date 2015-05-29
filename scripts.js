@@ -14,11 +14,12 @@ $(document).ready(function() {
 
 // Start Button
     $("#button1").click(function() {
-        document.getElementById("button1").innerHTML = ("Use the force, Luke!");
+        document.getElementById('memoryBoard').innerHTML = "";
+        newBoard();
         score=0;
-        newBoard;
         numMatches=0;
-        numMismatches
+        numMismatches=0;
+        counter=0;
     });
 
 
